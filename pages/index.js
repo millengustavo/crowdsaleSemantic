@@ -7,7 +7,8 @@ import {
   Divider,
   Progress,
   Form,
-  Message
+  Message,
+  Card
 } from "semantic-ui-react";
 import crowdsale from "../ethereum/crowdsale";
 import token from "../ethereum/token";
@@ -63,11 +64,18 @@ class CrowdsaleIndex extends Component {
     const { rate, cap, weiRaised, balance } = this.props;
     return (
       <Layout>
-        <Header as="h1">Buy HCKD Tokens</Header>
+        <Header as="h1">HCKD Tokens</Header>
+        <Card fluid color="green">
+          <Card.Content textAlign="center">
+            <Card.Header>Your Wallet Balance</Card.Header>
+            <Card.Meta>HCKD Tokens</Card.Meta>
+            <Card.Description>{balance / 1e18}</Card.Description>
+          </Card.Content>
+        </Card>
         <Form onSubmit={this.onSubmit} error={!!this.state.errorMessage}>
           <Form.Group>
             <Form.Input
-              width={6}
+              width={16}
               placeholder="Value in ETH to exchange for HCKD tokens"
               value={this.state.value}
               onChange={event => this.setState({ value: event.target.value })}
