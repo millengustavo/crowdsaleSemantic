@@ -3,7 +3,7 @@ import MultiSigWallet from "./build/MultiSigWallet.json";
 
 const instance = new web3.eth.Contract(
   JSON.parse(MultiSigWallet.interface),
-  "0xEdEE9C33c8FbBf83E9F87480a26c8cd8e45f496a"
+  "0x21429e288e0ba214d97825195FeD1D1Fdb4B5678"
 );
 
 export default instance;

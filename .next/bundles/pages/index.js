@@ -10,27 +10,40 @@ __NEXT_REGISTER_PAGE('/', function() {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__routes__ = __webpack_require__("./routes.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__routes___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__routes__);
 var _jsxFileName = "/home/gustavo/Documents/Github/crowdsaleSemantic/components/Footer.js";
+
 
 
 /* harmony default export */ __webpack_exports__["a"] = (function () {
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6
+      lineNumber: 7
     }
   }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["d" /* Divider */], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
-    }
-  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["c" /* Container */], {
-    textAlign: "left",
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 8
     }
-  }, "Powered by Eleva Technology"));
+  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["f" /* Header */], {
+    as: "h5",
+    floated: "left",
+    subheader: "Hackd Crowdsale",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    }
+  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["f" /* Header */], {
+    as: "h5",
+    floated: "right",
+    subheader: "Powered by Eleva Technology",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    }
+  }));
 });
 
 /***/ }),
@@ -177,7 +190,7 @@ module.exports = {"assembly":{".code":[{"begin":12277,"end":12487,"name":"PUSH",
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__build_ElevaCrowdsale_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__build_ElevaCrowdsale_json__);
 
 
-var instance = new __WEBPACK_IMPORTED_MODULE_0__web3__["a" /* default */].eth.Contract(JSON.parse(__WEBPACK_IMPORTED_MODULE_1__build_ElevaCrowdsale_json___default.a.interface), "0xC5eDf8f83158bdf5487A15841EC200183044C5D1");
+var instance = new __WEBPACK_IMPORTED_MODULE_0__web3__["a" /* default */].eth.Contract(JSON.parse(__WEBPACK_IMPORTED_MODULE_1__build_ElevaCrowdsale_json___default.a.interface), "0xe1f21f85F10fDB1626f07A8738c8bb12162d4Fca");
 /* harmony default export */ __webpack_exports__["a"] = (instance);
 
 /***/ }),
@@ -191,7 +204,7 @@ var instance = new __WEBPACK_IMPORTED_MODULE_0__web3__["a" /* default */].eth.Co
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__build_ElevaToken_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__build_ElevaToken_json__);
 
 
-var instance = new __WEBPACK_IMPORTED_MODULE_0__web3__["a" /* default */].eth.Contract(JSON.parse(__WEBPACK_IMPORTED_MODULE_1__build_ElevaToken_json___default.a.interface), "0xe1f21f85F10fDB1626f07A8738c8bb12162d4Fca");
+var instance = new __WEBPACK_IMPORTED_MODULE_0__web3__["a" /* default */].eth.Contract(JSON.parse(__WEBPACK_IMPORTED_MODULE_1__build_ElevaToken_json___default.a.interface), "0x01981ca4b06e57953074f85F04e9eB50BC0f9BdA");
 /* harmony default export */ __webpack_exports__["a"] = (instance);
 
 /***/ }),
@@ -205,12 +218,12 @@ var instance = new __WEBPACK_IMPORTED_MODULE_0__web3__["a" /* default */].eth.Co
 
 var web3;
 
-if (typeof window !== 'undefined' && typeof window.web3 !== 'undefined') {
+if (typeof window !== "undefined" && typeof window.web3 !== "undefined") {
   // We are in the browser and metamask is running.
   web3 = new __WEBPACK_IMPORTED_MODULE_0_web3___default.a(window.web3.currentProvider);
 } else {
   // We are on the server *OR* the user is not running metamask
-  var provider = new __WEBPACK_IMPORTED_MODULE_0_web3___default.a.providers.HttpProvider('https://kovan.infura.io/eZuEgdOZrMqOImH6ZyTE');
+  var provider = new __WEBPACK_IMPORTED_MODULE_0_web3___default.a.providers.HttpProvider("https://rinkeby.infura.io/eZuEgdOZrMqOImH6ZyTE");
   web3 = new __WEBPACK_IMPORTED_MODULE_0_web3___default.a(provider);
 }
 
@@ -97977,6 +97990,7 @@ function _assertThisInitialized(self) { if (self === void 0) { throw new Referen
 
 
 
+
 var CrowdsaleIndex =
 /*#__PURE__*/
 function (_Component) {
@@ -98035,7 +98049,7 @@ function (_Component) {
                   });
 
                 case 8:
-                  Router.replaceRoute("/");
+                  __WEBPACK_IMPORTED_MODULE_6__routes__["Router"].replaceRoute("/");
                   _context.next = 14;
                   break;
 
@@ -98081,56 +98095,58 @@ function (_Component) {
       return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__components_Layout__["a" /* default */], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 66
+          lineNumber: 67
         }
       }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["f" /* Header */], {
         as: "h1",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 67
+          lineNumber: 68
         }
       }, "HCKD Tokens"), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["b" /* Card */], {
         fluid: true,
         color: "green",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 68
+          lineNumber: 69
         }
       }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["b" /* Card */].Content, {
         textAlign: "center",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 69
+          lineNumber: 70
         }
       }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["b" /* Card */].Header, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 70
+          lineNumber: 71
         }
       }, "Your Wallet Balance"), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["b" /* Card */].Meta, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 71
+          lineNumber: 72
         }
       }, "HCKD Tokens"), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["b" /* Card */].Description, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 72
+          lineNumber: 73
         }
       }, balance / 1e18))), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["e" /* Form */], {
         onSubmit: this.onSubmit,
         error: !!this.state.errorMessage,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 75
-        }
-      }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["e" /* Form */].Group, {
-        __source: {
-          fileName: _jsxFileName,
           lineNumber: 76
         }
+      }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["e" /* Form */].Group, {
+        unstackable: true,
+        widths: 2,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 77
+        }
       }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["e" /* Form */].Input, {
-        width: 16,
+        icon: "ethereum",
         placeholder: "Value in ETH to exchange for HCKD tokens",
         value: this.state.value,
         onChange: function onChange(event) {
@@ -98140,7 +98156,7 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 77
+          lineNumber: 78
         }
       }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["e" /* Form */].Button, {
         loading: this.state.loading,
@@ -98148,7 +98164,7 @@ function (_Component) {
         type: "submit",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 83
+          lineNumber: 84
         }
       }, "Buy")), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["i" /* Message */], {
         error: true,
@@ -98156,7 +98172,7 @@ function (_Component) {
         content: this.state.errorMessage,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 87
+          lineNumber: 88
         }
       })), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["d" /* Divider */], {
         __source: {

@@ -1,7 +1,7 @@
 module.exports =
 __NEXT_REGISTER_PAGE('/founders', function() {
           var comp =
-      webpackJsonp([6],{
+      webpackJsonp([5],{
 
 /***/ "./components/Footer.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -10,27 +10,40 @@ __NEXT_REGISTER_PAGE('/founders', function() {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__routes__ = __webpack_require__("./routes.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__routes___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__routes__);
 var _jsxFileName = "/home/gustavo/Documents/Github/crowdsaleSemantic/components/Footer.js";
+
 
 
 /* harmony default export */ __webpack_exports__["a"] = (function () {
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6
+      lineNumber: 7
     }
   }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["d" /* Divider */], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
-    }
-  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["c" /* Container */], {
-    textAlign: "left",
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 8
     }
-  }, "Powered by Eleva Technology"));
+  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["f" /* Header */], {
+    as: "h5",
+    floated: "left",
+    subheader: "Hackd Crowdsale",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    }
+  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["f" /* Header */], {
+    as: "h5",
+    floated: "right",
+    subheader: "Powered by Eleva Technology",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    }
+  }));
 });
 
 /***/ }),
@@ -170,7 +183,7 @@ module.exports = {"assembly":{".code":[{"begin":186,"end":12871,"name":"PUSH","v
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__build_MultiSigWallet_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__build_MultiSigWallet_json__);
 
 
-var instance = new __WEBPACK_IMPORTED_MODULE_0__web3__["a" /* default */].eth.Contract(JSON.parse(__WEBPACK_IMPORTED_MODULE_1__build_MultiSigWallet_json___default.a.interface), "0xEdEE9C33c8FbBf83E9F87480a26c8cd8e45f496a");
+var instance = new __WEBPACK_IMPORTED_MODULE_0__web3__["a" /* default */].eth.Contract(JSON.parse(__WEBPACK_IMPORTED_MODULE_1__build_MultiSigWallet_json___default.a.interface), "0x21429e288e0ba214d97825195FeD1D1Fdb4B5678");
 /* harmony default export */ __webpack_exports__["a"] = (instance);
 
 /***/ }),
@@ -184,12 +197,12 @@ var instance = new __WEBPACK_IMPORTED_MODULE_0__web3__["a" /* default */].eth.Co
 
 var web3;
 
-if (typeof window !== 'undefined' && typeof window.web3 !== 'undefined') {
+if (typeof window !== "undefined" && typeof window.web3 !== "undefined") {
   // We are in the browser and metamask is running.
   web3 = new __WEBPACK_IMPORTED_MODULE_0_web3___default.a(window.web3.currentProvider);
 } else {
   // We are on the server *OR* the user is not running metamask
-  var provider = new __WEBPACK_IMPORTED_MODULE_0_web3___default.a.providers.HttpProvider('https://kovan.infura.io/eZuEgdOZrMqOImH6ZyTE');
+  var provider = new __WEBPACK_IMPORTED_MODULE_0_web3___default.a.providers.HttpProvider("https://rinkeby.infura.io/eZuEgdOZrMqOImH6ZyTE");
   web3 = new __WEBPACK_IMPORTED_MODULE_0_web3___default.a(provider);
 }
 
@@ -98726,7 +98739,7 @@ module.exports = routes;
 
 /***/ }),
 
-/***/ 9:
+/***/ 8:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__("./pages/founders.js");
@@ -98734,7 +98747,7 @@ module.exports = __webpack_require__("./pages/founders.js");
 
 /***/ })
 
-},[9])
+},[8])
           return { page: comp.default }
         })
       ;

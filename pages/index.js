@@ -15,6 +15,7 @@ import token from "../ethereum/token";
 import Layout from "../components/Layout";
 import { Link } from "../routes";
 import web3 from "../ethereum/web3";
+import { Router } from "../routes";
 
 class CrowdsaleIndex extends Component {
   state = {
@@ -73,9 +74,9 @@ class CrowdsaleIndex extends Component {
           </Card.Content>
         </Card>
         <Form onSubmit={this.onSubmit} error={!!this.state.errorMessage}>
-          <Form.Group>
+          <Form.Group unstackable widths={2}>
             <Form.Input
-              width={16}
+              icon="ethereum"
               placeholder="Value in ETH to exchange for HCKD tokens"
               value={this.state.value}
               onChange={event => this.setState({ value: event.target.value })}
@@ -86,7 +87,6 @@ class CrowdsaleIndex extends Component {
           </Form.Group>
           <Message error header="Oops!" content={this.state.errorMessage} />
         </Form>
-
         <Divider />
         <Header as="h2">
           Hackd Crowdsale Details
