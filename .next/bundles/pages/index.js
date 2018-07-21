@@ -98081,25 +98081,25 @@ function (_Component) {
       return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__components_Layout__["a" /* default */], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 56
+          lineNumber: 65
         }
       }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["e" /* Header */], {
         as: "h1",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 57
+          lineNumber: 66
         }
       }, "Buy HCKD Tokens"), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["d" /* Form */], {
         onSubmit: this.onSubmit,
         error: !!this.state.errorMessage,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 58
+          lineNumber: 67
         }
       }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["d" /* Form */].Group, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 59
+          lineNumber: 68
         }
       }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["d" /* Form */].Input, {
         width: 6,
@@ -98112,7 +98112,7 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 60
+          lineNumber: 69
         }
       }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["d" /* Form */].Button, {
         loading: this.state.loading,
@@ -98120,7 +98120,7 @@ function (_Component) {
         type: "submit",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 67
+          lineNumber: 75
         }
       }, "Buy")), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["h" /* Message */], {
         error: true,
@@ -98128,24 +98128,24 @@ function (_Component) {
         content: this.state.errorMessage,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 69
+          lineNumber: 79
         }
       })), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["c" /* Divider */], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 72
+          lineNumber: 82
         }
       }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["e" /* Header */], {
         as: "h2",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 73
+          lineNumber: 83
         }
       }, "Hackd Crowdsale Details", __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("a", {
         href: "https://kovan.etherscan.io/address/0xC5eDf8f83158bdf5487A15841EC200183044C5D1",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 75
+          lineNumber: 85
         }
       }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["a" /* Button */], {
         primary: true,
@@ -98153,107 +98153,107 @@ function (_Component) {
         floated: "right",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 76
+          lineNumber: 86
         }
       }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["a" /* Button */].Content, {
         visible: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 77
+          lineNumber: 87
         }
       }, "View Crowdsale Contract"), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["a" /* Button */].Content, {
         hidden: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 78
+          lineNumber: 88
         }
       }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["f" /* Icon */], {
         name: "right arrow",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 79
+          lineNumber: 89
         }
       }))))), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["k" /* Table */], {
         unstackable: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 85
+          lineNumber: 95
         }
       }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["k" /* Table */].Header, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 86
+          lineNumber: 96
         }
       }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["k" /* Table */].Row, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 87
-        }
-      }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["k" /* Table */].HeaderCell, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 88
-        }
-      }, "Description"), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["k" /* Table */].HeaderCell, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 89
-        }
-      }, "Value"))), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["k" /* Table */].Body, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 92
-        }
-      }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["k" /* Table */].Row, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 93
-        }
-      }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["k" /* Table */].Cell, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 94
-        }
-      }, "HCKD to ETH Rate"), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["k" /* Table */].Cell, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 95
-        }
-      }, rate)), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["k" /* Table */].Row, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 97
         }
-      }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["k" /* Table */].Cell, {
+      }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["k" /* Table */].HeaderCell, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 98
         }
-      }, "Crowdsale Cap (ETH)"), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["k" /* Table */].Cell, {
+      }, "Description"), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["k" /* Table */].HeaderCell, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 99
         }
-      }, "200.000 ETH")), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["k" /* Table */].Row, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 101
-        }
-      }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["k" /* Table */].Cell, {
+      }, "Value"))), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["k" /* Table */].Body, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 102
         }
-      }, "ETH Raised"), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["k" /* Table */].Cell, {
+      }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["k" /* Table */].Row, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 103
         }
-      }, __WEBPACK_IMPORTED_MODULE_7__ethereum_web3__["a" /* default */].utils.fromWei(weiRaised, 'ether'), " ETH")))), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["e" /* Header */], {
-        as: "h3",
+      }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["k" /* Table */].Cell, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 104
+        }
+      }, "HCKD to ETH Rate"), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["k" /* Table */].Cell, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 105
+        }
+      }, rate)), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["k" /* Table */].Row, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 107
+        }
+      }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["k" /* Table */].Cell, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 108
+        }
+      }, "Crowdsale Cap (ETH)"), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["k" /* Table */].Cell, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 109
+        }
+      }, "200.000 ETH")), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["k" /* Table */].Row, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 111
+        }
+      }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["k" /* Table */].Cell, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 112
+        }
+      }, "ETH Raised"), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["k" /* Table */].Cell, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 113
+        }
+      }, __WEBPACK_IMPORTED_MODULE_7__ethereum_web3__["a" /* default */].utils.fromWei(weiRaised, "ether"), " ETH")))), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["e" /* Header */], {
+        as: "h3",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 119
         }
       }, "Hard Cap Progress"), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["j" /* Progress */], {
         value: weiRaised,
@@ -98262,7 +98262,7 @@ function (_Component) {
         color: "green",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 108
+          lineNumber: 120
         }
       }, "Current Amount Raised"));
     }
