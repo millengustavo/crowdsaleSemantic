@@ -1,0 +1,18 @@
+{
+  "assembly": null,
+  "bytecode": "",
+  "functionHashes": {
+    "finishMinting()": "7d64bcb4"
+  },
+  "gasEstimates": {
+    "creation": {},
+    "external": {},
+    "internal": {}
+  },
+  "interface": "[{\"constant\":false,\"inputs\":[],\"name\":\"finishMinting\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}]",
+  "metadata": "",
+  "opcodes": "",
+  "runtimeBytecode": "",
+  "srcmap": "",
+  "srcmapRuntime": ""
+}
