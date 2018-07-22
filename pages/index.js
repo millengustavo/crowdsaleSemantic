@@ -8,7 +8,9 @@ import {
   Progress,
   Form,
   Message,
-  Card
+  Card,
+  Image,
+  Modal
 } from "semantic-ui-react";
 import crowdsale from "../ethereum/crowdsale";
 import token from "../ethereum/token";
@@ -21,8 +23,13 @@ class CrowdsaleIndex extends Component {
   state = {
     value: "",
     loading: false,
-    errorMessage: ""
+    errorMessage: "",
+    openQR: false
   };
+
+  handleOpen = () => this.setState({ openQR: true });
+
+  handleClose = () => this.setState({ openQR: false, errorMessage: "" });
 
   onSubmit = async event => {
     event.preventDefault();
@@ -65,7 +72,7 @@ class CrowdsaleIndex extends Component {
     const { rate, cap, weiRaised, balance } = this.props;
     return (
       <Layout>
-        <Header as="h1">
+        <Header as="h2">
           HCKD Tokens
           <a href="https://rinkeby.etherscan.io/address/0x01981ca4b06e57953074f85f04e9eb50bc0f9bda">
             <Button primary animated floated="right">
@@ -75,6 +82,23 @@ class CrowdsaleIndex extends Component {
               </Button.Content>
             </Button>
           </a>
+          <Button floated="right" onClick={this.handleOpen}>
+            QR Code
+          </Button>
+          <Modal open={this.state.openQR} onClose={this.handleClose}>
+            <Header content="Address of the Crowdsale" />
+            <Modal.Content>
+              <h3>
+                You can buy tokens transfering ETH directly to the address of
+                the crowdsale:
+              </h3>
+              <Image src="/static/crowdsale.png" centered size="small" />
+              <Header textAlign="center">
+                0xe1f21f85F10fDB1626f07A8738c8bb12162d4Fca
+              </Header>
+            </Modal.Content>
+            <Modal.Actions />
+          </Modal>
         </Header>
         <Card fluid color="green">
           <Card.Content textAlign="center">

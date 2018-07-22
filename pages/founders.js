@@ -149,7 +149,7 @@ class Founders extends Component {
       <Layout>
         {isOwner ? (
           <div>
-            <Header as="h1">
+            <Header as="h2">
               Founder's MultiSigWallet Interface
               <a href="https://rinkeby.etherscan.io/address/0x21429e288e0ba214d97825195FeD1D1Fdb4B5678">
                 <Button floated="right" primary animated>
@@ -351,6 +351,11 @@ class Founders extends Component {
             </Table>
             <Divider />
             MultiSigWallet balance: {balanceWallet / 1e18} ETH
+            <br />
+            Submit a Transaction
+            <br />
+            Table with summary of transactions to confirm/revoke and tx hash
+            linked to etherscan
           </div>
         ) : (
           <div>You are Not an Owner!</div>

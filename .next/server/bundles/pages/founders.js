@@ -67,7 +67,7 @@ module.exports =
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -628,7 +628,7 @@ function (_Component) {
           lineNumber: 151
         }
       }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Header"], {
-        as: "h1",
+        as: "h2",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 152
@@ -973,10 +973,20 @@ function (_Component) {
           fileName: _jsxFileName,
           lineNumber: 352
         }
-      }), "MultiSigWallet balance: ", balanceWallet / 1e18, " ETH") : __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("div", {
+      }), "MultiSigWallet balance: ", balanceWallet / 1e18, " ETH", __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("br", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 354
+        }
+      }), "Submit a Transaction", __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 356
+        }
+      }), "Table with summary of transactions to confirm/revoke and tx hash linked to etherscan") : __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("div", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 361
         }
       }, "You are Not an Owner!"));
     }
@@ -1085,7 +1095,7 @@ module.exports = routes;
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__("./pages/founders.js");
