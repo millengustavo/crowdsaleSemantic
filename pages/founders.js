@@ -125,17 +125,26 @@ class Founders extends Component {
     const balanceWallet = await api.account
       .balance("0x21429e288e0ba214d97825195FeD1D1Fdb4B5678")
       .then(balanceData => {
-        console.log(balanceData.result);
+        return balanceData.result;
       });
-
+    console.log(balanceWallet);
+    const txList = await api.account
+      .txlist("0x21429e288e0ba214d97825195FeD1D1Fdb4B5678")
+      .then(temp => {
+        return temp.result;
+      });
+    console.log(txList[0]);
+    console.log(Object.values(txList[0])[1]);
     return {
       isOwner,
-      listOwners
+      listOwners,
+      balanceWallet,
+      txList
     };
   }
 
   render() {
-    const { isOwner, listOwners } = this.props;
+    const { isOwner, listOwners, balanceWallet, txList } = this.props;
     return (
       <Layout>
         {isOwner ? (
@@ -341,7 +350,7 @@ class Founders extends Component {
               </Table.Body>
             </Table>
             <Divider />
-            Teste
+            MultiSigWallet balance: {balanceWallet / 1e18} ETH
           </div>
         ) : (
           <div>You are Not an Owner!</div>
