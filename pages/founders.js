@@ -9,8 +9,15 @@ import {
   Icon,
   Modal,
   Form,
-  Message
+  Message,
+  Divider
 } from "semantic-ui-react";
+import { Router } from "../routes";
+const api = require("etherscan-api").init(
+  "P9RFR324H2Z64CEJ9Q21HGXYGP54N7XIND",
+  "rinkeby",
+  "3000"
+);
 
 class Founders extends Component {
   state = {
@@ -21,7 +28,8 @@ class Founders extends Component {
     value: "",
     addressOwner: "",
     errorMessage: "",
-    newOwner: ""
+    newOwner: "",
+    bWallet: ""
   };
 
   handleOpen = () => this.setState({ openAdd: true });
@@ -114,11 +122,18 @@ class Founders extends Component {
       return ownerBool;
     });
     const listOwners = await wallet.methods.getOwners().call();
+    const balanceWallet = await api.account
+      .balance("0x21429e288e0ba214d97825195FeD1D1Fdb4B5678")
+      .then(balanceData => {
+        console.log(balanceData.result);
+      });
+
     return {
       isOwner,
       listOwners
     };
   }
+
   render() {
     const { isOwner, listOwners } = this.props;
     return (
@@ -127,7 +142,7 @@ class Founders extends Component {
           <div>
             <Header as="h1">
               Founder's MultiSigWallet Interface
-              <a href="https://kovan.etherscan.io/address/0xedee9c33c8fbbf83e9f87480a26c8cd8e45f496a">
+              <a href="https://rinkeby.etherscan.io/address/0x21429e288e0ba214d97825195FeD1D1Fdb4B5678">
                 <Button floated="right" primary animated>
                   <Button.Content visible>View Wallet Contract</Button.Content>
                   <Button.Content hidden>
@@ -142,6 +157,7 @@ class Founders extends Component {
                   <Table.HeaderCell>
                     Owner's Address
                     <Button
+                      inverted
                       compact
                       color="red"
                       floated="right"
@@ -194,7 +210,13 @@ class Founders extends Component {
                         </Form>
                       </Modal.Actions>
                     </Modal>
-                    <Button compact floated="right" onClick={this.handleOpen2}>
+                    <Button
+                      inverted
+                      color="blue"
+                      compact
+                      floated="right"
+                      onClick={this.handleOpen2}
+                    >
                       Replace
                     </Button>
                     <Modal
@@ -255,7 +277,8 @@ class Founders extends Component {
                       </Modal.Actions>
                     </Modal>
                     <Button
-                      primary
+                      inverted
+                      color="green"
                       compact
                       floated="right"
                       onClick={this.handleOpen}
@@ -317,6 +340,8 @@ class Founders extends Component {
                 })}
               </Table.Body>
             </Table>
+            <Divider />
+            Teste
           </div>
         ) : (
           <div>You are Not an Owner!</div>

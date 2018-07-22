@@ -6,11 +6,12 @@
   "scripts": {
     "test": "mocha",
     "dev": "node server.js",
-		"build": "next build"
+    "build": "next build"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "etherscan-api": "^8.1.2",
     "ganache-cli": "^6.1.6",
     "mocha": "^5.2.0",
     "next": "^6.1.1",

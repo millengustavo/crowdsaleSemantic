@@ -65,7 +65,17 @@ class CrowdsaleIndex extends Component {
     const { rate, cap, weiRaised, balance } = this.props;
     return (
       <Layout>
-        <Header as="h1">HCKD Tokens</Header>
+        <Header as="h1">
+          HCKD Tokens
+          <a href="https://rinkeby.etherscan.io/address/0x01981ca4b06e57953074f85f04e9eb50bc0f9bda">
+            <Button primary animated floated="right">
+              <Button.Content visible>View Token Contract</Button.Content>
+              <Button.Content hidden>
+                <Icon name="right arrow" />
+              </Button.Content>
+            </Button>
+          </a>
+        </Header>
         <Card fluid color="green">
           <Card.Content textAlign="center">
             <Card.Header>Your Wallet Balance</Card.Header>
@@ -90,7 +100,7 @@ class CrowdsaleIndex extends Component {
         <Divider />
         <Header as="h2">
           Hackd Crowdsale Details
-          <a href="https://kovan.etherscan.io/address/0xC5eDf8f83158bdf5487A15841EC200183044C5D1">
+          <a href="https://rinkeby.etherscan.io/address/0xe1f21f85F10fDB1626f07A8738c8bb12162d4Fca">
             <Button primary animated floated="right">
               <Button.Content visible>View Crowdsale Contract</Button.Content>
               <Button.Content hidden>
