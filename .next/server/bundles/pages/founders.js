@@ -67,7 +67,7 @@ module.exports =
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -134,6 +134,7 @@ var _jsxFileName = "/home/gustavo/Documents/Github/crowdsaleSemantic/components/
 
 /* harmony default export */ __webpack_exports__["a"] = (function () {
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["Menu"], {
+    stackable: true,
     style: {
       marginTop: "10px"
     },
@@ -160,7 +161,7 @@ var _jsxFileName = "/home/gustavo/Documents/Github/crowdsaleSemantic/components/
       lineNumber: 12
     }
   }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__routes__["Link"], {
-    route: "/faq",
+    route: "/team",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 13
@@ -171,8 +172,8 @@ var _jsxFileName = "/home/gustavo/Documents/Github/crowdsaleSemantic/components/
       fileName: _jsxFileName,
       lineNumber: 14
     }
-  }, "F.A.Q.")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__routes__["Link"], {
-    route: "/founders",
+  }, "Team")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__routes__["Link"], {
+    route: "/faq",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 16
@@ -183,7 +184,19 @@ var _jsxFileName = "/home/gustavo/Documents/Github/crowdsaleSemantic/components/
       fileName: _jsxFileName,
       lineNumber: 17
     }
-  }, "Founders Wallet"))));
+  }, "FAQ")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__routes__["Link"], {
+    route: "/founders",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    }
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
+    className: "item",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
+    }
+  }, "Wallet"))));
 });
 
 /***/ }),
@@ -355,7 +368,9 @@ function (_Component) {
         addressOwner: "",
         errorMessage: "",
         newOwner: "",
-        bWallet: ""
+        bWallet: "",
+        valueTransaction: "",
+        addressTransaction: ""
       }
     }), Object.defineProperty(_assertThisInitialized(_this), "handleOpen", {
       configurable: true,
@@ -604,6 +619,69 @@ function (_Component) {
           return _value3.apply(this, arguments);
         };
       }()
+    }), Object.defineProperty(_assertThisInitialized(_this), "onSubmit4", {
+      configurable: true,
+      enumerable: true,
+      writable: true,
+      value: function () {
+        var _value4 = _asyncToGenerator(
+        /*#__PURE__*/
+        __WEBPACK_IMPORTED_MODULE_0__babel_runtime_regenerator___default.a.mark(function _callee4(event) {
+          var accounts;
+          return __WEBPACK_IMPORTED_MODULE_0__babel_runtime_regenerator___default.a.wrap(function _callee4$(_context4) {
+            while (1) {
+              switch (_context4.prev = _context4.next) {
+                case 0:
+                  event.preventDefault();
+
+                  _this.setState({
+                    loading: true,
+                    errorMessage: ""
+                  });
+
+                  _context4.prev = 2;
+                  _context4.next = 5;
+                  return __WEBPACK_IMPORTED_MODULE_4__ethereum_web3__["a" /* default */].eth.getAccounts();
+
+                case 5:
+                  accounts = _context4.sent;
+                  _context4.next = 8;
+                  return __WEBPACK_IMPORTED_MODULE_3__ethereum_wallet__["a" /* default */].methods.submitTransaction(_this.state.addressTransaction, _this.state.valueTransaction, "0x00").send({
+                    from: accounts[0]
+                  });
+
+                case 8:
+                  __WEBPACK_IMPORTED_MODULE_6__routes__["Router"].replaceRoute("/");
+                  _context4.next = 14;
+                  break;
+
+                case 11:
+                  _context4.prev = 11;
+                  _context4.t0 = _context4["catch"](2);
+
+                  _this.setState({
+                    errorMessage: _context4.t0.message
+                  });
+
+                case 14:
+                  _this.setState({
+                    loading: false,
+                    addressTransaction: "",
+                    valueTransaction: ""
+                  });
+
+                case 15:
+                case "end":
+                  return _context4.stop();
+              }
+            }
+          }, _callee4, this, [[2, 11]]);
+        }));
+
+        return function value(_x4) {
+          return _value4.apply(this, arguments);
+        };
+      }()
     }), _temp));
   }
 
@@ -620,24 +698,24 @@ function (_Component) {
       return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__components_Layout__["a" /* default */], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 149
+          lineNumber: 183
         }
       }, isOwner ? __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 151
+          lineNumber: 185
         }
       }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Header"], {
         as: "h2",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 152
+          lineNumber: 186
         }
       }, "Founder's MultiSigWallet Interface", __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("a", {
         href: "https://rinkeby.etherscan.io/address/0x21429e288e0ba214d97825195FeD1D1Fdb4B5678",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 154
+          lineNumber: 188
         }
       }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Button"], {
         floated: "right",
@@ -645,46 +723,149 @@ function (_Component) {
         animated: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 155
+          lineNumber: 189
         }
       }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Button"].Content, {
         visible: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 156
+          lineNumber: 190
         }
       }, "View Wallet Contract"), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Button"].Content, {
         hidden: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 157
+          lineNumber: 191
         }
       }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Icon"], {
         name: "right arrow",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 158
+          lineNumber: 192
         }
-      }))))), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Table"], {
+      }))))), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Card"], {
+        fluid: true,
+        color: "green",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 197
+        }
+      }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Card"].Content, {
+        textAlign: "center",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 198
+        }
+      }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Card"].Header, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 199
+        }
+      }, "MultiSigWallet Balance"), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Card"].Description, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 200
+        }
+      }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Statistic"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 201
+        }
+      }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Statistic"].Value, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 202
+        }
+      }, balanceWallet / 1e18), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Statistic"].Label, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 203
+        }
+      }, "ETH"))))), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Form"], {
+        onSubmit: this.onSubmit4,
+        error: !!this.state.errorMessage,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 208
+        }
+      }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Form"].Group, {
+        unstackable: true,
+        widths: 3,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 209
+        }
+      }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Form"].Input, {
+        placeholder: "Destination address",
+        value: this.state.addressTransaction,
+        onChange: function onChange(event) {
+          return _this2.setState({
+            addressTransaction: event.target.value
+          });
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 210
+        }
+      }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Form"].Input, {
+        icon: "ethereum",
+        placeholder: "Value in ETH",
+        value: this.state.valueTransaction,
+        onChange: function onChange(event) {
+          return _this2.setState({
+            valueTransaction: event.target.value
+          });
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 217
+        }
+      }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Form"].Button, {
+        loading: this.state.loading,
+        primary: true,
+        type: "submit",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 225
+        }
+      }, "Submit a Transaction")), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Message"], {
+        error: true,
+        header: "Oops!",
+        content: this.state.errorMessage,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 229
+        }
+      })), "Submit a Transaction", __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("br", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 232
+        }
+      }), "Table with summary of transactions to confirm/revoke and tx hash linked to etherscan", __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Divider"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 235
+        }
+      }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Table"], {
         unstackable: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 163
+          lineNumber: 236
         }
       }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Table"].Header, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 164
+          lineNumber: 237
         }
       }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Table"].Row, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 165
+          lineNumber: 238
         }
       }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Table"].HeaderCell, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 166
+          lineNumber: 239
         }
       }, "Owner's Address", __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Button"], {
         inverted: true,
@@ -694,42 +875,42 @@ function (_Component) {
         onClick: this.handleOpen3,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 168
+          lineNumber: 241
         }
       }, "Remove"), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Modal"], {
         open: this.state.openRemove,
         onClose: this.handleClose3,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 177
+          lineNumber: 250
         }
       }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Header"], {
         content: "Remove an Owner",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 181
+          lineNumber: 254
         }
       }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Modal"].Content, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 182
+          lineNumber: 255
         }
       }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("h3", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 183
+          lineNumber: 256
         }
       }, "Enter the address of the owner to be removed")), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Modal"].Actions, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 185
+          lineNumber: 258
         }
       }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Form"], {
         onSubmit: this.onSubmi3,
         error: !!this.state.errorMessage,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 186
+          lineNumber: 259
         }
       }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Form"].Input, {
         placeholder: "Address of the Owner to be removed",
@@ -741,7 +922,7 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 190
+          lineNumber: 263
         }
       }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Button"], {
         color: "red",
@@ -749,7 +930,7 @@ function (_Component) {
         inverted: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 199
+          lineNumber: 272
         }
       }, "Cancel"), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Button"], {
         color: "green",
@@ -758,7 +939,7 @@ function (_Component) {
         inverted: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 206
+          lineNumber: 279
         }
       }, "Remove"), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Message"], {
         error: true,
@@ -766,7 +947,7 @@ function (_Component) {
         content: this.state.errorMessage,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 214
+          lineNumber: 287
         }
       })))), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Button"], {
         inverted: true,
@@ -776,42 +957,42 @@ function (_Component) {
         onClick: this.handleOpen2,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 222
+          lineNumber: 295
         }
       }, "Replace"), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Modal"], {
         open: this.state.openReplace,
         onClose: this.handleClose2,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 231
+          lineNumber: 304
         }
       }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Header"], {
         content: "Replace an Owner",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 235
+          lineNumber: 308
         }
       }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Modal"].Content, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 236
+          lineNumber: 309
         }
       }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("h3", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 237
+          lineNumber: 310
         }
       }, "Enter the address of the owner to be replaced and the address of the new Owner")), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Modal"].Actions, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 242
+          lineNumber: 315
         }
       }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Form"], {
         onSubmit: this.onSubmit2,
         error: !!this.state.errorMessage,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 243
+          lineNumber: 316
         }
       }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Form"].Input, {
         placeholder: "Address of the Owner to be replaced",
@@ -823,7 +1004,7 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 247
+          lineNumber: 320
         }
       }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Form"].Input, {
         placeholder: "Address of the new Owner",
@@ -835,7 +1016,7 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 256
+          lineNumber: 329
         }
       }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Button"], {
         color: "red",
@@ -843,7 +1024,7 @@ function (_Component) {
         inverted: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 265
+          lineNumber: 338
         }
       }, "Cancel"), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Button"], {
         color: "green",
@@ -852,7 +1033,7 @@ function (_Component) {
         inverted: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 272
+          lineNumber: 345
         }
       }, "Replace"), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Message"], {
         error: true,
@@ -860,7 +1041,7 @@ function (_Component) {
         content: this.state.errorMessage,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 280
+          lineNumber: 353
         }
       })))), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Button"], {
         inverted: true,
@@ -870,42 +1051,42 @@ function (_Component) {
         onClick: this.handleOpen,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 288
+          lineNumber: 361
         }
       }, "Add"), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Modal"], {
         open: this.state.openAdd,
         onClose: this.handleClose,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 297
+          lineNumber: 370
         }
       }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Header"], {
         content: "Add an Owner",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 298
+          lineNumber: 371
         }
       }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Modal"].Content, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 299
+          lineNumber: 372
         }
       }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("h3", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 300
+          lineNumber: 373
         }
       }, "Enter the address of the owner to be added")), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Modal"].Actions, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 302
+          lineNumber: 375
         }
       }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Form"], {
         onSubmit: this.onSubmit,
         error: !!this.state.errorMessage,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 303
+          lineNumber: 376
         }
       }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Form"].Input, {
         placeholder: "Address of the Owner to be added",
@@ -917,7 +1098,7 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 307
+          lineNumber: 380
         }
       }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Button"], {
         color: "red",
@@ -925,7 +1106,7 @@ function (_Component) {
         inverted: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 316
+          lineNumber: 389
         }
       }, "Cancel"), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Button"], {
         color: "green",
@@ -934,13 +1115,13 @@ function (_Component) {
         inverted: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 323
+          lineNumber: 396
         }
       }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Icon"], {
         name: "add",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 329
+          lineNumber: 402
         }
       }), " Add"), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Message"], {
         error: true,
@@ -948,45 +1129,30 @@ function (_Component) {
         content: this.state.errorMessage,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 331
+          lineNumber: 404
         }
       }))))))), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Table"].Body, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 342
+          lineNumber: 415
         }
       }, listOwners.map(function (address) {
         return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Table"].Row, {
           key: address,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 345
+            lineNumber: 418
           }
         }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Table"].Cell, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 346
+            lineNumber: 419
           }
         }, address));
-      }))), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Divider"], {
+      })))) : __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 352
-        }
-      }), "MultiSigWallet balance: ", balanceWallet / 1e18, " ETH", __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("br", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 354
-        }
-      }), "Submit a Transaction", __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("br", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 356
-        }
-      }), "Table with summary of transactions to confirm/revoke and tx hash linked to etherscan") : __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("div", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 361
+          lineNumber: 427
         }
       }, "You are Not an Owner!"));
     }
@@ -995,69 +1161,69 @@ function (_Component) {
     value: function () {
       var _getInitialProps = _asyncToGenerator(
       /*#__PURE__*/
-      __WEBPACK_IMPORTED_MODULE_0__babel_runtime_regenerator___default.a.mark(function _callee5() {
+      __WEBPACK_IMPORTED_MODULE_0__babel_runtime_regenerator___default.a.mark(function _callee6() {
         var isOwner, listOwners, balanceWallet, txList;
-        return __WEBPACK_IMPORTED_MODULE_0__babel_runtime_regenerator___default.a.wrap(function _callee5$(_context5) {
+        return __WEBPACK_IMPORTED_MODULE_0__babel_runtime_regenerator___default.a.wrap(function _callee6$(_context6) {
           while (1) {
-            switch (_context5.prev = _context5.next) {
+            switch (_context6.prev = _context6.next) {
               case 0:
-                _context5.next = 2;
+                _context6.next = 2;
                 return __WEBPACK_IMPORTED_MODULE_4__ethereum_web3__["a" /* default */].eth.getAccounts().then(
                 /*#__PURE__*/
                 function () {
                   var _ref2 = _asyncToGenerator(
                   /*#__PURE__*/
-                  __WEBPACK_IMPORTED_MODULE_0__babel_runtime_regenerator___default.a.mark(function _callee4(accounts) {
+                  __WEBPACK_IMPORTED_MODULE_0__babel_runtime_regenerator___default.a.mark(function _callee5(accounts) {
                     var ownerBool;
-                    return __WEBPACK_IMPORTED_MODULE_0__babel_runtime_regenerator___default.a.wrap(function _callee4$(_context4) {
+                    return __WEBPACK_IMPORTED_MODULE_0__babel_runtime_regenerator___default.a.wrap(function _callee5$(_context5) {
                       while (1) {
-                        switch (_context4.prev = _context4.next) {
+                        switch (_context5.prev = _context5.next) {
                           case 0:
-                            _context4.next = 2;
+                            _context5.next = 2;
                             return __WEBPACK_IMPORTED_MODULE_3__ethereum_wallet__["a" /* default */].methods.isOwner(accounts[0]).call();
 
                           case 2:
-                            ownerBool = _context4.sent;
-                            return _context4.abrupt("return", ownerBool);
+                            ownerBool = _context5.sent;
+                            return _context5.abrupt("return", ownerBool);
 
                           case 4:
                           case "end":
-                            return _context4.stop();
+                            return _context5.stop();
                         }
                       }
-                    }, _callee4, this);
+                    }, _callee5, this);
                   }));
 
-                  return function (_x4) {
+                  return function (_x5) {
                     return _ref2.apply(this, arguments);
                   };
                 }());
 
               case 2:
-                isOwner = _context5.sent;
-                _context5.next = 5;
+                isOwner = _context6.sent;
+                _context6.next = 5;
                 return __WEBPACK_IMPORTED_MODULE_3__ethereum_wallet__["a" /* default */].methods.getOwners().call();
 
               case 5:
-                listOwners = _context5.sent;
-                _context5.next = 8;
+                listOwners = _context6.sent;
+                _context6.next = 8;
                 return api.account.balance("0x21429e288e0ba214d97825195FeD1D1Fdb4B5678").then(function (balanceData) {
                   return balanceData.result;
                 });
 
               case 8:
-                balanceWallet = _context5.sent;
+                balanceWallet = _context6.sent;
                 console.log(balanceWallet);
-                _context5.next = 12;
+                _context6.next = 12;
                 return api.account.txlist("0x21429e288e0ba214d97825195FeD1D1Fdb4B5678").then(function (temp) {
                   return temp.result;
                 });
 
               case 12:
-                txList = _context5.sent;
+                txList = _context6.sent;
                 console.log(txList[0]);
                 console.log(Object.values(txList[0])[1]);
-                return _context5.abrupt("return", {
+                return _context6.abrupt("return", {
                   isOwner: isOwner,
                   listOwners: listOwners,
                   balanceWallet: balanceWallet,
@@ -1066,10 +1232,10 @@ function (_Component) {
 
               case 16:
               case "end":
-                return _context5.stop();
+                return _context6.stop();
             }
           }
-        }, _callee5, this);
+        }, _callee6, this);
       }));
 
       return function getInitialProps() {
@@ -1095,7 +1261,7 @@ module.exports = routes;
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__("./pages/founders.js");

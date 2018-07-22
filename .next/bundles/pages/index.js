@@ -1,7 +1,7 @@
 module.exports =
 __NEXT_REGISTER_PAGE('/', function() {
           var comp =
-      webpackJsonp([4],{
+      webpackJsonp([5],{
 
 /***/ "./components/Footer.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -22,12 +22,12 @@ var _jsxFileName = "/home/gustavo/Documents/Github/crowdsaleSemantic/components/
       fileName: _jsxFileName,
       lineNumber: 7
     }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["e" /* Divider */], {
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["d" /* Divider */], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8
     }
-  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["g" /* Header */], {
+  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["f" /* Header */], {
     as: "h5",
     floated: "left",
     subheader: "Hackd Crowdsale",
@@ -35,7 +35,7 @@ var _jsxFileName = "/home/gustavo/Documents/Github/crowdsaleSemantic/components/
       fileName: _jsxFileName,
       lineNumber: 9
     }
-  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["g" /* Header */], {
+  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["f" /* Header */], {
     as: "h5",
     floated: "right",
     subheader: "Powered by Eleva Technology",
@@ -62,7 +62,8 @@ var _jsxFileName = "/home/gustavo/Documents/Github/crowdsaleSemantic/components/
 
 
 /* harmony default export */ __webpack_exports__["a"] = (function () {
-  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["j" /* Menu */], {
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["i" /* Menu */], {
+    stackable: true,
     style: {
       marginTop: "10px"
     },
@@ -82,14 +83,14 @@ var _jsxFileName = "/home/gustavo/Documents/Github/crowdsaleSemantic/components/
       fileName: _jsxFileName,
       lineNumber: 9
     }
-  }, "Hackd Crowdsale")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["j" /* Menu */].Menu, {
+  }, "Hackd Crowdsale")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["i" /* Menu */].Menu, {
     position: "right",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 12
     }
   }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__routes__["Link"], {
-    route: "/faq",
+    route: "/team",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 13
@@ -100,8 +101,8 @@ var _jsxFileName = "/home/gustavo/Documents/Github/crowdsaleSemantic/components/
       fileName: _jsxFileName,
       lineNumber: 14
     }
-  }, "F.A.Q.")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__routes__["Link"], {
-    route: "/founders",
+  }, "Team")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__routes__["Link"], {
+    route: "/faq",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 16
@@ -112,7 +113,19 @@ var _jsxFileName = "/home/gustavo/Documents/Github/crowdsaleSemantic/components/
       fileName: _jsxFileName,
       lineNumber: 17
     }
-  }, "Founders Wallet"))));
+  }, "FAQ")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__routes__["Link"], {
+    route: "/founders",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    }
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
+    className: "item",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
+    }
+  }, "Wallet"))));
 });
 
 /***/ }),
@@ -135,7 +148,7 @@ var _jsxFileName = "/home/gustavo/Documents/Github/crowdsaleSemantic/components/
 
 
 /* harmony default export */ __webpack_exports__["a"] = (function (props) {
-  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["d" /* Container */], {
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["c" /* Container */], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9
@@ -57481,7 +57494,7 @@ StepTitle.create = Object(__WEBPACK_IMPORTED_MODULE_4__lib__["l" /* createShorth
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__collections_Breadcrumb_BreadcrumbSection__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Breadcrumb/BreadcrumbSection.js");
 /* unused harmony reexport BreadcrumbSection */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__collections_Form__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Form/index.js");
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return __WEBPACK_IMPORTED_MODULE_16__collections_Form__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_16__collections_Form__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__collections_Form_FormButton__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Form/FormButton.js");
 /* unused harmony reexport FormButton */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__collections_Form_FormCheckbox__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Form/FormCheckbox.js");
@@ -57507,7 +57520,7 @@ StepTitle.create = Object(__WEBPACK_IMPORTED_MODULE_4__lib__["l" /* createShorth
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__collections_Grid_GridRow__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Grid/GridRow.js");
 /* unused harmony reexport GridRow */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__collections_Menu__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Menu/index.js");
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "j", function() { return __WEBPACK_IMPORTED_MODULE_29__collections_Menu__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return __WEBPACK_IMPORTED_MODULE_29__collections_Menu__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__collections_Menu_MenuHeader__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Menu/MenuHeader.js");
 /* unused harmony reexport MenuHeader */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__collections_Menu_MenuItem__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Menu/MenuItem.js");
@@ -57515,7 +57528,7 @@ StepTitle.create = Object(__WEBPACK_IMPORTED_MODULE_4__lib__["l" /* createShorth
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__collections_Menu_MenuMenu__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Menu/MenuMenu.js");
 /* unused harmony reexport MenuMenu */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__collections_Message__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Message/index.js");
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "k", function() { return __WEBPACK_IMPORTED_MODULE_33__collections_Message__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "j", function() { return __WEBPACK_IMPORTED_MODULE_33__collections_Message__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__collections_Message_MessageContent__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Message/MessageContent.js");
 /* unused harmony reexport MessageContent */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__collections_Message_MessageHeader__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Message/MessageHeader.js");
@@ -57539,7 +57552,7 @@ StepTitle.create = Object(__WEBPACK_IMPORTED_MODULE_4__lib__["l" /* createShorth
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_44__collections_Table_TableRow__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Table/TableRow.js");
 /* unused harmony reexport TableRow */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_45__elements_Button_Button__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Button/Button.js");
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_45__elements_Button_Button__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_45__elements_Button_Button__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_46__elements_Button_ButtonContent__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Button/ButtonContent.js");
 /* unused harmony reexport ButtonContent */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_47__elements_Button_ButtonGroup__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Button/ButtonGroup.js");
@@ -57547,23 +57560,23 @@ StepTitle.create = Object(__WEBPACK_IMPORTED_MODULE_4__lib__["l" /* createShorth
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_48__elements_Button_ButtonOr__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Button/ButtonOr.js");
 /* unused harmony reexport ButtonOr */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_49__elements_Container__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Container/index.js");
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_49__elements_Container__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_49__elements_Container__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_50__elements_Divider__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Divider/index.js");
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_50__elements_Divider__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_50__elements_Divider__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_51__elements_Flag__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Flag/index.js");
 /* unused harmony reexport Flag */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_52__elements_Header__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Header/index.js");
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return __WEBPACK_IMPORTED_MODULE_52__elements_Header__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return __WEBPACK_IMPORTED_MODULE_52__elements_Header__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_53__elements_Header_HeaderContent__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Header/HeaderContent.js");
 /* unused harmony reexport HeaderContent */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_54__elements_Header_HeaderSubheader__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Header/HeaderSubheader.js");
 /* unused harmony reexport HeaderSubheader */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_55__elements_Icon__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Icon/index.js");
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return __WEBPACK_IMPORTED_MODULE_55__elements_Icon__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return __WEBPACK_IMPORTED_MODULE_55__elements_Icon__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_56__elements_Icon_IconGroup__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Icon/IconGroup.js");
 /* unused harmony reexport IconGroup */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_57__elements_Image__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Image/index.js");
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return __WEBPACK_IMPORTED_MODULE_57__elements_Image__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return __WEBPACK_IMPORTED_MODULE_57__elements_Image__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_58__elements_Image_ImageGroup__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Image/ImageGroup.js");
 /* unused harmony reexport ImageGroup */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_59__elements_Input__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Input/index.js");
@@ -57611,7 +57624,7 @@ StepTitle.create = Object(__WEBPACK_IMPORTED_MODULE_4__lib__["l" /* createShorth
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_80__elements_Step_StepTitle__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Step/StepTitle.js");
 /* unused harmony reexport StepTitle */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_81__modules_Accordion_Accordion__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/modules/Accordion/Accordion.js");
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_81__modules_Accordion_Accordion__["a"]; });
+/* unused harmony reexport Accordion */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_82__modules_Accordion_AccordionAccordion__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/modules/Accordion/AccordionAccordion.js");
 /* unused harmony reexport AccordionAccordion */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_83__modules_Accordion_AccordionContent__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/modules/Accordion/AccordionContent.js");
@@ -57643,7 +57656,7 @@ StepTitle.create = Object(__WEBPACK_IMPORTED_MODULE_4__lib__["l" /* createShorth
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_96__modules_Embed__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/modules/Embed/index.js");
 /* unused harmony reexport Embed */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_97__modules_Modal__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/modules/Modal/index.js");
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "l", function() { return __WEBPACK_IMPORTED_MODULE_97__modules_Modal__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "k", function() { return __WEBPACK_IMPORTED_MODULE_97__modules_Modal__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_98__modules_Modal_ModalActions__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/modules/Modal/ModalActions.js");
 /* unused harmony reexport ModalActions */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_99__modules_Modal_ModalContent__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/modules/Modal/ModalContent.js");
@@ -57659,7 +57672,7 @@ StepTitle.create = Object(__WEBPACK_IMPORTED_MODULE_4__lib__["l" /* createShorth
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_104__modules_Popup_PopupHeader__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/modules/Popup/PopupHeader.js");
 /* unused harmony reexport PopupHeader */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_105__modules_Progress__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/modules/Progress/index.js");
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "m", function() { return __WEBPACK_IMPORTED_MODULE_105__modules_Progress__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "l", function() { return __WEBPACK_IMPORTED_MODULE_105__modules_Progress__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_106__modules_Rating__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/modules/Rating/index.js");
 /* unused harmony reexport Rating */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_107__modules_Rating_RatingIcon__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/modules/Rating/RatingIcon.js");
@@ -57691,7 +57704,7 @@ StepTitle.create = Object(__WEBPACK_IMPORTED_MODULE_4__lib__["l" /* createShorth
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_120__views_Advertisement__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/views/Advertisement/index.js");
 /* unused harmony reexport Advertisement */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_121__views_Card_Card__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/views/Card/Card.js");
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_121__views_Card_Card__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_121__views_Card_Card__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_122__views_Card_CardContent__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/views/Card/CardContent.js");
 /* unused harmony reexport CardContent */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_123__views_Card_CardDescription__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/views/Card/CardDescription.js");
@@ -57757,7 +57770,7 @@ StepTitle.create = Object(__WEBPACK_IMPORTED_MODULE_4__lib__["l" /* createShorth
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_153__views_Item_ItemMeta__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/views/Item/ItemMeta.js");
 /* unused harmony reexport ItemMeta */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_154__views_Statistic__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/views/Statistic/index.js");
-/* unused harmony reexport Statistic */
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "m", function() { return __WEBPACK_IMPORTED_MODULE_154__views_Statistic__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_155__views_Statistic_StatisticGroup__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/views/Statistic/StatisticGroup.js");
 /* unused harmony reexport StatisticGroup */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_156__views_Statistic_StatisticLabel__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/views/Statistic/StatisticLabel.js");
@@ -60765,7 +60778,7 @@ Accordion.Accordion = __WEBPACK_IMPORTED_MODULE_5__AccordionAccordion__["a" /* d
 Accordion.Content = __WEBPACK_IMPORTED_MODULE_6__AccordionContent__["a" /* default */];
 Accordion.Panel = __WEBPACK_IMPORTED_MODULE_7__AccordionPanel__["a" /* default */];
 Accordion.Title = __WEBPACK_IMPORTED_MODULE_8__AccordionTitle__["a" /* default */];
-/* harmony default export */ __webpack_exports__["a"] = (Accordion);
+/* unused harmony default export */ var _unused_webpack_default_export = (Accordion);
 
 /***/ }),
 
@@ -71799,7 +71812,7 @@ StatisticValue.create = Object(__WEBPACK_IMPORTED_MODULE_4__lib__["l" /* createS
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Statistic__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/views/Statistic/Statistic.js");
-/* unused harmony reexport default */
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__Statistic__["a"]; });
 
 
 
@@ -98115,138 +98128,148 @@ function (_Component) {
       return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__components_Layout__["a" /* default */], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 74
+          lineNumber: 76
         }
-      }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["g" /* Header */], {
+      }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["f" /* Header */], {
         as: "h2",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 75
+          lineNumber: 77
         }
       }, "HCKD Tokens", __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("a", {
         href: "https://rinkeby.etherscan.io/address/0x01981ca4b06e57953074f85f04e9eb50bc0f9bda",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 77
+          lineNumber: 79
         }
-      }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["b" /* Button */], {
+      }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["a" /* Button */], {
         primary: true,
         animated: true,
         floated: "right",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 78
-        }
-      }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["b" /* Button */].Content, {
-        visible: true,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 79
-        }
-      }, "View Token Contract"), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["b" /* Button */].Content, {
-        hidden: true,
-        __source: {
-          fileName: _jsxFileName,
           lineNumber: 80
         }
-      }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["h" /* Icon */], {
-        name: "right arrow",
+      }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["a" /* Button */].Content, {
+        visible: true,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 81
         }
-      })))), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["b" /* Button */], {
+      }, "View Token Contract"), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["a" /* Button */].Content, {
+        hidden: true,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 82
+        }
+      }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["g" /* Icon */], {
+        name: "right arrow",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 83
+        }
+      })))), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["a" /* Button */], {
         floated: "right",
         onClick: this.handleOpen,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 85
+          lineNumber: 87
         }
-      }, "QR Code"), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["l" /* Modal */], {
+      }, "QR Code"), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["k" /* Modal */], {
         open: this.state.openQR,
         onClose: this.handleClose,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 88
-        }
-      }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["g" /* Header */], {
-        content: "Address of the Crowdsale",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 89
-        }
-      }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["l" /* Modal */].Content, {
-        __source: {
-          fileName: _jsxFileName,
           lineNumber: 90
         }
-      }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("h3", {
+      }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["f" /* Header */], {
+        content: "Address of the Crowdsale",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 91
         }
-      }, "You can buy tokens transfering ETH directly to the address of the crowdsale:"), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["i" /* Image */], {
+      }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["k" /* Modal */].Content, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 92
+        }
+      }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("h3", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 93
+        }
+      }, "You can buy tokens transfering ETH directly to the address of the crowdsale:"), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["h" /* Image */], {
         src: "/static/crowdsale.png",
         centered: true,
         size: "small",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 95
+          lineNumber: 97
         }
-      }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["g" /* Header */], {
+      }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["f" /* Header */], {
         textAlign: "center",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 96
+          lineNumber: 98
         }
-      }, "0xe1f21f85F10fDB1626f07A8738c8bb12162d4Fca")), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["l" /* Modal */].Actions, {
+      }, "0xe1f21f85F10fDB1626f07A8738c8bb12162d4Fca")), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["k" /* Modal */].Actions, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 100
+          lineNumber: 102
         }
-      }))), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["c" /* Card */], {
+      }))), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["b" /* Card */], {
         fluid: true,
         color: "green",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 103
-        }
-      }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["c" /* Card */].Content, {
-        textAlign: "center",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 104
-        }
-      }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["c" /* Card */].Header, {
-        __source: {
-          fileName: _jsxFileName,
           lineNumber: 105
         }
-      }, "Your Wallet Balance"), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["c" /* Card */].Meta, {
+      }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["b" /* Card */].Content, {
+        textAlign: "center",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 106
         }
-      }, "HCKD Tokens"), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["c" /* Card */].Description, {
+      }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["b" /* Card */].Header, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 107
         }
-      }, balance / 1e18))), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["f" /* Form */], {
-        onSubmit: this.onSubmit,
-        error: !!this.state.errorMessage,
+      }, "Your Wallet Balance"), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["b" /* Card */].Description, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 108
+        }
+      }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["m" /* Statistic */], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 109
+        }
+      }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["m" /* Statistic */].Value, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 110
         }
-      }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["f" /* Form */].Group, {
-        unstackable: true,
-        widths: 2,
+      }, balance / 1e18), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["m" /* Statistic */].Label, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 111
         }
-      }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["f" /* Form */].Input, {
+      }, "HCKD"))))), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["e" /* Form */], {
+        onSubmit: this.onSubmit,
+        error: !!this.state.errorMessage,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 116
+        }
+      }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["e" /* Form */].Group, {
+        unstackable: true,
+        widths: 2,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 117
+        }
+      }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["e" /* Form */].Input, {
         icon: "ethereum",
         placeholder: "Value in ETH to exchange for HCKD tokens",
         value: this.state.value,
@@ -98257,94 +98280,74 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 112
+          lineNumber: 118
         }
-      }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["f" /* Form */].Button, {
+      }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["e" /* Form */].Button, {
         loading: this.state.loading,
         primary: true,
         type: "submit",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 118
+          lineNumber: 124
         }
-      }, "Buy")), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["k" /* Message */], {
+      }, "Buy")), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["j" /* Message */], {
         error: true,
         header: "Oops!",
         content: this.state.errorMessage,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 122
+          lineNumber: 128
         }
-      })), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["e" /* Divider */], {
+      })), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["d" /* Divider */], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 124
+          lineNumber: 130
         }
-      }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["g" /* Header */], {
+      }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["f" /* Header */], {
         as: "h2",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 125
+          lineNumber: 131
         }
       }, "Hackd Crowdsale Details", __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("a", {
         href: "https://rinkeby.etherscan.io/address/0xe1f21f85F10fDB1626f07A8738c8bb12162d4Fca",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 127
+          lineNumber: 133
         }
-      }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["b" /* Button */], {
+      }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["a" /* Button */], {
         primary: true,
         animated: true,
         floated: "right",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 128
+          lineNumber: 134
         }
-      }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["b" /* Button */].Content, {
+      }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["a" /* Button */].Content, {
         visible: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 129
+          lineNumber: 135
         }
-      }, "View Crowdsale Contract"), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["b" /* Button */].Content, {
+      }, "View Crowdsale Contract"), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["a" /* Button */].Content, {
         hidden: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 130
+          lineNumber: 136
         }
-      }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["h" /* Icon */], {
+      }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["g" /* Icon */], {
         name: "right arrow",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 131
+          lineNumber: 137
         }
       }))))), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["n" /* Table */], {
         unstackable: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 137
+          lineNumber: 143
         }
       }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["n" /* Table */].Header, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 138
-        }
-      }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["n" /* Table */].Row, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 139
-        }
-      }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["n" /* Table */].HeaderCell, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 140
-        }
-      }, "Description"), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["n" /* Table */].HeaderCell, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 141
-        }
-      }, "Value"))), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["n" /* Table */].Body, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 144
@@ -98354,60 +98357,80 @@ function (_Component) {
           fileName: _jsxFileName,
           lineNumber: 145
         }
-      }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["n" /* Table */].Cell, {
+      }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["n" /* Table */].HeaderCell, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 146
         }
-      }, "HCKD to ETH Rate"), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["n" /* Table */].Cell, {
+      }, "Description"), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["n" /* Table */].HeaderCell, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 147
         }
-      }, rate)), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["n" /* Table */].Row, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 149
-        }
-      }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["n" /* Table */].Cell, {
+      }, "Value"))), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["n" /* Table */].Body, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 150
         }
-      }, "Crowdsale Cap (ETH)"), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["n" /* Table */].Cell, {
+      }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["n" /* Table */].Row, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 151
         }
-      }, "200.000 ETH")), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["n" /* Table */].Row, {
+      }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["n" /* Table */].Cell, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 152
+        }
+      }, "HCKD to ETH Rate"), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["n" /* Table */].Cell, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 153
         }
-      }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["n" /* Table */].Cell, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 154
-        }
-      }, "ETH Raised"), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["n" /* Table */].Cell, {
+      }, rate)), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["n" /* Table */].Row, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 155
         }
-      }, __WEBPACK_IMPORTED_MODULE_7__ethereum_web3__["a" /* default */].utils.fromWei(weiRaised, "ether"), " ETH")))), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["g" /* Header */], {
-        as: "h3",
+      }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["n" /* Table */].Cell, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 156
+        }
+      }, "Crowdsale Cap (ETH)"), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["n" /* Table */].Cell, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 157
+        }
+      }, "200.000 ETH")), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["n" /* Table */].Row, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 159
+        }
+      }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["n" /* Table */].Cell, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 160
+        }
+      }, "ETH Raised"), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["n" /* Table */].Cell, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 161
         }
-      }, "Hard Cap Progress"), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["m" /* Progress */], {
+      }, __WEBPACK_IMPORTED_MODULE_7__ethereum_web3__["a" /* default */].utils.fromWei(weiRaised, "ether"), " ETH")))), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["f" /* Header */], {
+        as: "h3",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 167
+        }
+      }, "Hard Cap Progress"), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["l" /* Progress */], {
         value: weiRaised,
         total: cap / rate,
         indicating: true,
         color: "green",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 162
+          lineNumber: 168
         }
       }, "Current Amount Raised"));
     }
@@ -98528,14 +98551,6 @@ module.exports = routes;
 
 /***/ }),
 
-/***/ 3:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__("./pages/index.js");
-
-
-/***/ }),
-
 /***/ 4:
 /***/ (function(module, exports) {
 
@@ -98562,9 +98577,17 @@ module.exports = __webpack_require__("./pages/index.js");
 
 /* (ignored) */
 
+/***/ }),
+
+/***/ 8:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__("./pages/index.js");
+
+
 /***/ })
 
-},[3])
+},[8])
           return { page: comp.default }
         })
       ;

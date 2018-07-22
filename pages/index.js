@@ -10,7 +10,9 @@ import {
   Message,
   Card,
   Image,
-  Modal
+  Modal,
+  Statistic,
+  StatisticLabel
 } from "semantic-ui-react";
 import crowdsale from "../ethereum/crowdsale";
 import token from "../ethereum/token";
@@ -103,8 +105,12 @@ class CrowdsaleIndex extends Component {
         <Card fluid color="green">
           <Card.Content textAlign="center">
             <Card.Header>Your Wallet Balance</Card.Header>
-            <Card.Meta>HCKD Tokens</Card.Meta>
-            <Card.Description>{balance / 1e18}</Card.Description>
+            <Card.Description>
+              <Statistic>
+                <Statistic.Value>{balance / 1e18}</Statistic.Value>
+                <Statistic.Label>HCKD</Statistic.Label>
+              </Statistic>
+            </Card.Description>
           </Card.Content>
         </Card>
         <Form onSubmit={this.onSubmit} error={!!this.state.errorMessage}>

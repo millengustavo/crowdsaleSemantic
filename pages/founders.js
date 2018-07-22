@@ -10,7 +10,9 @@ import {
   Modal,
   Form,
   Message,
-  Divider
+  Divider,
+  Card,
+  Statistic
 } from "semantic-ui-react";
 import { Router } from "../routes";
 const api = require("etherscan-api").init(
@@ -29,7 +31,9 @@ class Founders extends Component {
     addressOwner: "",
     errorMessage: "",
     newOwner: "",
-    bWallet: ""
+    bWallet: "",
+    valueTransaction: "",
+    addressTransaction: ""
   };
 
   handleOpen = () => this.setState({ openAdd: true });
@@ -116,6 +120,36 @@ class Founders extends Component {
     });
   };
 
+  onSubmit4 = async event => {
+    event.preventDefault();
+
+    this.setState({ loading: true, errorMessage: "" });
+
+    try {
+      const accounts = await web3.eth.getAccounts();
+
+      await wallet.methods
+        .submitTransaction(
+          this.state.addressTransaction,
+          this.state.valueTransaction,
+          "0x00"
+        )
+        .send({
+          from: accounts[0]
+        });
+
+      Router.replaceRoute(`/`);
+    } catch (err) {
+      this.setState({ errorMessage: err.message });
+    }
+
+    this.setState({
+      loading: false,
+      addressTransaction: "",
+      valueTransaction: ""
+    });
+  };
+
   static async getInitialProps() {
     const isOwner = await web3.eth.getAccounts().then(async accounts => {
       const ownerBool = await wallet.methods.isOwner(accounts[0]).call();
@@ -160,6 +194,45 @@ class Founders extends Component {
                 </Button>
               </a>
             </Header>
+            <Card fluid color="green">
+              <Card.Content textAlign="center">
+                <Card.Header>MultiSigWallet Balance</Card.Header>
+                <Card.Description>
+                  <Statistic>
+                    <Statistic.Value>{balanceWallet / 1e18}</Statistic.Value>
+                    <Statistic.Label>ETH</Statistic.Label>
+                  </Statistic>
+                </Card.Description>
+              </Card.Content>
+            </Card>
+            <Form onSubmit={this.onSubmit4} error={!!this.state.errorMessage}>
+              <Form.Group unstackable widths={3}>
+                <Form.Input
+                  placeholder="Destination address"
+                  value={this.state.addressTransaction}
+                  onChange={event =>
+                    this.setState({ addressTransaction: event.target.value })
+                  }
+                />
+                <Form.Input
+                  icon="ethereum"
+                  placeholder="Value in ETH"
+                  value={this.state.valueTransaction}
+                  onChange={event =>
+                    this.setState({ valueTransaction: event.target.value })
+                  }
+                />
+                <Form.Button loading={this.state.loading} primary type="submit">
+                  Submit a Transaction
+                </Form.Button>
+              </Form.Group>
+              <Message error header="Oops!" content={this.state.errorMessage} />
+            </Form>
+            Submit a Transaction
+            <br />
+            Table with summary of transactions to confirm/revoke and tx hash
+            linked to etherscan
+            <Divider />
             <Table unstackable>
               <Table.Header>
                 <Table.Row>
@@ -349,13 +422,6 @@ class Founders extends Component {
                 })}
               </Table.Body>
             </Table>
-            <Divider />
-            MultiSigWallet balance: {balanceWallet / 1e18} ETH
-            <br />
-            Submit a Transaction
-            <br />
-            Table with summary of transactions to confirm/revoke and tx hash
-            linked to etherscan
           </div>
         ) : (
           <div>You are Not an Owner!</div>
