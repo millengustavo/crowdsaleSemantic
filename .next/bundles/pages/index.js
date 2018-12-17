@@ -1,7 +1,7 @@
 module.exports =
 __NEXT_REGISTER_PAGE('/', function() {
           var comp =
-      webpackJsonp([5],{
+      webpackJsonp([4],{
 
 /***/ "./components/Footer.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -12,7 +12,7 @@ __NEXT_REGISTER_PAGE('/', function() {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__routes__ = __webpack_require__("./routes.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__routes___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__routes__);
-var _jsxFileName = "/home/gustavo/Documents/Github/crowdsaleSemantic/components/Footer.js";
+var _jsxFileName = "/Users/elevadesign/Documents/Github/crowdsaleSemantic/components/Footer.js";
 
 
 
@@ -57,7 +57,7 @@ var _jsxFileName = "/home/gustavo/Documents/Github/crowdsaleSemantic/components/
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__routes__ = __webpack_require__("./routes.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__routes___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__routes__);
-var _jsxFileName = "/home/gustavo/Documents/Github/crowdsaleSemantic/components/Header.js";
+var _jsxFileName = "/Users/elevadesign/Documents/Github/crowdsaleSemantic/components/Header.js";
 
 
 
@@ -141,7 +141,7 @@ var _jsxFileName = "/home/gustavo/Documents/Github/crowdsaleSemantic/components/
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_next_head___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_next_head__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Header__ = __webpack_require__("./components/Header.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Footer__ = __webpack_require__("./components/Footer.js");
-var _jsxFileName = "/home/gustavo/Documents/Github/crowdsaleSemantic/components/Layout.js";
+var _jsxFileName = "/Users/elevadesign/Documents/Github/crowdsaleSemantic/components/Layout.js";
 
 
 
@@ -231,12 +231,12 @@ var instance = new __WEBPACK_IMPORTED_MODULE_0__web3__["a" /* default */].eth.Co
 
 var web3;
 
-if (typeof window !== "undefined" && typeof window.web3 !== "undefined") {
+if (typeof window !== 'undefined' && typeof window.web3 !== 'undefined') {
   // We are in the browser and metamask is running.
   web3 = new __WEBPACK_IMPORTED_MODULE_0_web3___default.a(window.web3.currentProvider);
 } else {
   // We are on the server *OR* the user is not running metamask
-  var provider = new __WEBPACK_IMPORTED_MODULE_0_web3___default.a.providers.HttpProvider("https://rinkeby.infura.io/eZuEgdOZrMqOImH6ZyTE");
+  var provider = new __WEBPACK_IMPORTED_MODULE_0_web3___default.a.providers.HttpProvider('https://rinkeby.infura.io/eZuEgdOZrMqOImH6ZyTE');
   web3 = new __WEBPACK_IMPORTED_MODULE_0_web3___default.a(provider);
 }
 
@@ -97977,7 +97977,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__routes___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__routes__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ethereum_web3__ = __webpack_require__("./ethereum/web3.js");
 
-var _jsxFileName = "/home/gustavo/Documents/Github/crowdsaleSemantic/pages/index.js";
+var _jsxFileName = "/Users/elevadesign/Documents/Github/crowdsaleSemantic/pages/index.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -98551,6 +98551,14 @@ module.exports = routes;
 
 /***/ }),
 
+/***/ 3:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__("./pages/index.js");
+
+
+/***/ }),
+
 /***/ 4:
 /***/ (function(module, exports) {
 
@@ -98577,17 +98585,9 @@ module.exports = routes;
 
 /* (ignored) */
 
-/***/ }),
-
-/***/ 8:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__("./pages/index.js");
-
-
 /***/ })
 
-},[8])
+},[3])
           return { page: comp.default }
         })
       ;
