@@ -1,2 +1,4 @@
 /node_modules
 /ethereum/web3.js
+.next
+.vscode
